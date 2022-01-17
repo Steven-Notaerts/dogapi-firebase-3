@@ -1,0 +1,54 @@
+﻿.dog-info {
+  width: 100%;
+  max-width: 2400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+  &__container {
+    width: 100%;
+    max-width: 1400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &__title {
+    font-size: 2rem;
+    text-align: left;
+    width: 100%;
+  }
+  &__wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+  &__list {
+  }
+
+  &__list-item {
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+  }
+  &__details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-height: 500px;
+    padding: 2rem;
+  }
+  &__img {
+    max-height: 500px;
+    width: auto;
+    border: 15px 0;
+  }
+  &__submit {
+    border: none;
+    background-color: transparent;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    border-radius: 10px;
+    &:hover {
+      background-color: lightblue;
+    }
+  }
+}

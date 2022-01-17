@@ -1,0 +1,36 @@
+﻿.favorit-dogs {
+  width: 100%;
+  max-width: 2400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+  &__container {
+    width: 100%;
+    max-width: 1400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__title {
+    font-size: 2rem;
+    text-align: left;
+    width: 100%;
+  }
+
+  &__list {
+  }
+
+  &__list-item {
+  }
+  &__remove-btn {
+    background: none;
+    border: none;
+    margin-left: 1rem;
+    &:hover {
+      font-weight: 700;
+    }
+  }
+}
