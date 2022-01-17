@@ -11,8 +11,8 @@ const DogBreedsDetail = ({ id }) => {
         const responseDogApiDetailData = await fetch(apiUrl + "/" + id);
         const detailData = await responseDogApiDetailData.json();
         console.log(detailData);
-        console.log(detailData.height.metric);
-        console.log(detailData.reference_image_id);
+        console.log(typeof detailData.height.metric);
+        console.log(typeof detailData.name);
         setDogDetail(detailData);
         console.log(dogDetail.height.metric);
       } catch (error) {
@@ -36,10 +36,10 @@ const DogBreedsDetail = ({ id }) => {
               <li className="dog-info__list-item">
                 Bred for: {dogDetail.bred_for}
               </li>
-              {/* <li className="dog-info__list-item">
+              {/*  <li className="dog-info__list-item">
                 Height: {dogDetail.height.metric}
               </li>
-              <li className="dog-info__list-item">
+                 <li className="dog-info__list-item">
                 Weight: {dogDetail.weight.metric}
               </li> */}
               <li className="dog-info__list-item">
