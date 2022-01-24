@@ -6,7 +6,6 @@ const firebaseConfig = {
   authDomain: process.env.REACT_APP_FIREBASE_DOMAIN,
   databaseURL: process.env.REACT_APP_FIREBASE_DATABASE_URL,
 };
-console.log;
 const app = initializeApp(firebaseConfig);
 
 // Get a reference to the database service
