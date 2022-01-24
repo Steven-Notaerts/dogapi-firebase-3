@@ -1,7 +1,6 @@
 ﻿import { initializeApp } from "firebase/app";
 import { getDatabase, ref, set, get, child, remove } from "firebase/database";
-import { v4 as uuidv4 } from "uuid";
-import { useState, useEffect } from "react";
+
 const firebaseConfig = {
   apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
   authDomain: process.env.REACT_APP_FIREBASE_DOMAIN,
@@ -24,13 +23,13 @@ export const removeItem = async (id) => {
 export const readItem = async () => {
   const dbRef = ref(database);
   const snapshots = await get(child(dbRef, `dogFavorits/`));
+  //test if
   if (snapshots.exists()) {
     snapshots.forEach((snapshot) => {
       var childKey = snapshot.key;
       var childData = snapshot.val();
-      // console.log(childData);
+      console.log(childData);
     });
-    //  console.log(snapshots.val());
     let data = [];
     data = snapshots.val();
     console.log(data);

@@ -11,13 +11,12 @@ const FavoritDogs = () => {
             console.log(item);
           });
         } else {
-          return data({ name: "no data" });
+          return null;
         }
 
         setFavoritDogsData(data);
       });
     }
-
     getData();
   }, []);
 

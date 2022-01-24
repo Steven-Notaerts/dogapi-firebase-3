@@ -3,13 +3,14 @@ import { Link } from "@reach/router";
 const DogBreeds = () => {
   const [dogApiData, setDogApiData] = useState([]);
   const [dogDetail, setDogDetail] = useState([{ id: null }]);
-  const apiUrl = process.env.REACT_APP_DOG_API_URL;
-  const apiKey = process.env.REACT_APP_DOG_API_KEY;
 
   useEffect(() => {
     async function dogApiData() {
       try {
-        const responseDogApiData = await fetch(apiUrl + apiKey);
+        const responseDogApiData = await fetch(
+          `${process.env.REACT_APP_DOG_API_URL}` +
+            `${process.env.REACT_APP_DOG_API_KEY}`
+        );
         const data = await responseDogApiData.json();
         console.log(data);
         setDogApiData(data);

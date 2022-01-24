@@ -1,14 +1,13 @@
 ﻿import React, { useEffect, useState } from "react";
 import { writeItem } from "../utils/FireBase";
 const DogBreedsDetail = ({ id }) => {
-  const apiUrl = process.env.REACT_APP_DOG_API_URL;
-  const apiKey = process.env.REACT_APP_DOG_API_KEY;
-  const imageUrl = process.env.REACT_APP_DOG_IMG_URL;
   const [dogDetail, setDogDetail] = useState([]);
   useEffect(() => {
     async function dogApiDataDetail() {
       try {
-        const responseDogApiDetailData = await fetch(apiUrl + "/" + id);
+        const responseDogApiDetailData = await fetch(
+          `${process.env.REACT_APP_DOG_API_URL}` + "/" + id
+        );
         const detailData = await responseDogApiDetailData.json();
         console.log(detailData);
         console.log(typeof detailData.height.metric);
@@ -36,10 +35,10 @@ const DogBreedsDetail = ({ id }) => {
               <li className="dog-info__list-item">
                 Bred for: {dogDetail.bred_for}
               </li>
-              {/*  <li className="dog-info__list-item">
+              {/* <li className="dog-info__list-item">
                 Height: {dogDetail.height.metric}
               </li>
-                 <li className="dog-info__list-item">
+              <li className="dog-info__list-item">
                 Weight: {dogDetail.weight.metric}
               </li> */}
               <li className="dog-info__list-item">
