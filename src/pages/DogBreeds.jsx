@@ -16,7 +16,7 @@ const DogBreeds = () => {
         console.log(data);
         setDogApiData(data);
       } catch (error) {
-        console(error);
+        console.log(error);
       }
     }
     dogApiData();
