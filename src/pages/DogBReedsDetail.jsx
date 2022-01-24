@@ -28,7 +28,7 @@ const DogBreedsDetail = ({ id }) => {
         <div className="dog-info__wrapper">
           <img
             className="dog-info__img"
-            src={`${imageUrl}${dogDetail.reference_image_id}.jpg`}
+            src={`${REACT_APP_DOG_IMG_URL}${dogDetail.reference_image_id}.jpg`}
           />
           <div className="dog-info__details">
             <ul className="dog-info__list">
