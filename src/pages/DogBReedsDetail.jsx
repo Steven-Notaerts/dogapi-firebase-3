@@ -1,7 +1,7 @@
 ﻿import React, { useEffect, useState } from "react";
 import { writeItem } from "../utils/FireBase";
 const DogBreedsDetail = ({ id }) => {
-  const imageUrl = process.env.REACT_APP_DOG_IMG_URL;
+  //const imageUrl = process.env.REACT_APP_DOG_IMG_URL;
   const [dogDetail, setDogDetail] = useState([]);
   useEffect(() => {
     async function dogApiDataDetail() {
@@ -13,8 +13,9 @@ const DogBreedsDetail = ({ id }) => {
         console.log(detailData);
         console.log(typeof detailData.height.metric);
         console.log(typeof detailData.name);
+        //console.log(`${imageUrl}${dogDetail.reference_image_id}.jpg`);
+        // console.log(dogDetail.height.metric);
         setDogDetail(detailData);
-        console.log(dogDetail.height.metric);
       } catch (error) {
         console.log(error);
       }
@@ -29,7 +30,7 @@ const DogBreedsDetail = ({ id }) => {
         <div className="dog-info__wrapper">
           <img
             className="dog-info__img"
-            src={`${imageUrl}${dogDetail.reference_image_id}.jpg`}
+            src={`${process.env.REACT_APP_DOG_IMG_URL}${dogDetail.reference_image_id}.jpg`}
           />
           <div className="dog-info__details">
             <ul className="dog-info__list">
