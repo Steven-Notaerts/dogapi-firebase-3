@@ -1,4 +1,5 @@
-﻿const Home = () => {
+﻿/* eslint-disable react-hooks/exhaustive-deps */
+const Home = () => {
   return (
     <section className="home">
       <div className="home__container">

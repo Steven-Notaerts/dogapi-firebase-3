@@ -1,4 +1,5 @@
-﻿import { readItem, removeItem } from "../utils/FireBase";
+﻿/* eslint-disable react-hooks/exhaustive-deps */
+import { readItem, removeItem } from "../utils/FireBase";
 import { useState, useEffect } from "react";
 
 const FavoritDogs = () => {

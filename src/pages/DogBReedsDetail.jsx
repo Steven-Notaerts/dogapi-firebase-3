@@ -1,4 +1,5 @@
-﻿import React, { useEffect, useState } from "react";
+﻿/* eslint-disable react-hooks/exhaustive-deps */
+import React, { useEffect, useState } from "react";
 import { writeItem } from "../utils/FireBase";
 const DogBreedsDetail = ({ id }) => {
   //const imageUrl = process.env.REACT_APP_DOG_IMG_URL;

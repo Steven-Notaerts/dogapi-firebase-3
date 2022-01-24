@@ -1,4 +1,5 @@
-﻿import React from "react";
+﻿/* eslint-disable react-hooks/exhaustive-deps */
+import React from "react";
 import { Link } from "@reach/router";
 
 export default () => {
