@@ -38,12 +38,12 @@ const DogBreedsDetail = ({ id }) => {
               <li className="dog-info__list-item">
                 Bred for: {dogDetail.bred_for}
               </li>
-              {/* <li className="dog-info__list-item">
+              <li className="dog-info__list-item">
                 Height: {dogDetail.height.metric}
               </li>
               <li className="dog-info__list-item">
                 Weight: {dogDetail.weight.metric}
-              </li> */}
+              </li>
               <li className="dog-info__list-item">
                 Lifespan: {dogDetail.life_span}
               </li>
