@@ -1,6 +1,7 @@
 ﻿import React, { useEffect, useState } from "react";
 import { writeItem } from "../utils/FireBase";
 const DogBreedsDetail = ({ id }) => {
+  const imageUrl = process.env.REACT_APP_DOG_IMG_URL;
   const [dogDetail, setDogDetail] = useState([]);
   useEffect(() => {
     async function dogApiDataDetail() {
@@ -28,7 +29,7 @@ const DogBreedsDetail = ({ id }) => {
         <div className="dog-info__wrapper">
           <img
             className="dog-info__img"
-            src={`${REACT_APP_DOG_IMG_URL}"/"${dogDetail.reference_image_id}.jpg`}
+            src={`${imageUrl}${dogDetail.reference_image_id}.jpg`}
           />
           <div className="dog-info__details">
             <ul className="dog-info__list">
