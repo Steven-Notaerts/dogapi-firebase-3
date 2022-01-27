@@ -7,8 +7,11 @@ const FavoritDogs = () => {
   useEffect(() => {
     async function getData() {
       return readItem().then((data) => {
-        if (Object.values(data)) {
-          Object.values(data).map((item) => {
+        //object.values zal alleen de waarden meegeven
+        //object.keys zal alleen de key's meegeven
+        //object.entries zal alles meegeven, neemt key and value en steekt hem in een array
+        if (Object.entries(data)) {
+          Object.entries(data).map((item) => {
             console.log(item);
           });
         } else {

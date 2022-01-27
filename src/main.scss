@@ -3,8 +3,15 @@
 @import "../../dogapi-firebase-3/src/pages/favoritDogs";
 @import "../../dogapi-firebase-3/src/pages/home";
 @import "../../dogapi-firebase-3/src/pages/dogBreedDetail";
+@import "../../dogapi-firebase-3/src/components/loader";
 @import url("https://fonts.googleapis.com/css2?family=Kameron:wght@400;700&display=swap");
 
 body {
   font-family: "Kameron", serif;
+}
+
+:root {
+}
+
+.dark {
 }

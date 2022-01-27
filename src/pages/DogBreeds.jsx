@@ -4,7 +4,14 @@ import { Link } from "@reach/router";
 const DogBreeds = () => {
   const [dogApiData, setDogApiData] = useState([]);
   const [dogDetail, setDogDetail] = useState([{ id: null }]);
+  // //const [loader, setLoader] = useState(false);
 
+  // ////loader
+  // const loader = document.querySelector(".loader");
+  // const showLoader = () => loader.classList.remove("loader--hide");
+
+  // const hideLoader = () => loader.classList.add("loader--hide");
+  // useEffect(hideLoader, []);
   useEffect(() => {
     async function dogApiData() {
       try {
@@ -25,6 +32,7 @@ const DogBreeds = () => {
     <div className="dogbreeds">
       <div className="dogbreeds__container">
         <h1 className="dogbreeds__title">Dog breeds</h1>
+        <div className="loader"></div>
         <ul className="dogbreeds__list">
           {dogApiData.map((breed) => (
             <li key={breed.id} className="dogbreeds__list-item">
