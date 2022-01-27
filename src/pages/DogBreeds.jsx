@@ -4,7 +4,7 @@ import { Link } from "@reach/router";
 const DogBreeds = () => {
   const [dogApiData, setDogApiData] = useState([]);
   const [dogDetail, setDogDetail] = useState([{ id: null }]);
-  // //const [loader, setLoader] = useState(false);
+  const [loader, setLoader] = useState(false);
 
   // ////loader
   // const loader = document.querySelector(".loader");
