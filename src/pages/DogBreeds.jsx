@@ -5,13 +5,6 @@ const DogBreeds = () => {
   const [dogApiData, setDogApiData] = useState([]);
   const [dogDetail, setDogDetail] = useState([{ id: null }]);
   const [loader, setLoader] = useState(false);
-
-  // ////loader
-  // const loader = document.querySelector(".loader");
-  // const showLoader = () => loader.classList.remove("loader--hide");
-
-  // const hideLoader = () => loader.classList.add("loader--hide");
-  // useEffect(hideLoader, []);
   useEffect(() => {
     async function dogApiData() {
       try {
