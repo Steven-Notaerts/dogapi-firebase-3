@@ -22,6 +22,7 @@ const DogBreeds = () => {
         const data = await responseDogApiData.json();
         console.log(data);
         setDogApiData(data);
+        setLoader(true);
       } catch (error) {
         console.log(error);
       }
@@ -32,8 +33,9 @@ const DogBreeds = () => {
     <div className="dogbreeds">
       <div className="dogbreeds__container">
         <h1 className="dogbreeds__title">Dog breeds</h1>
-        {/* <div className="loader"></div> */}
+
         <ul className="dogbreeds__list">
+          {loader ? setDogApiData : <div className="loader"></div>}
           {dogApiData.map((breed) => (
             <li key={breed.id} className="dogbreeds__list-item">
               <Link

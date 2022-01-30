@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 
 const FavoritDogs = () => {
   const [favoritDogsData, setFavoritDogsData] = useState([]);
+  const [loader, setLoader] = useState(false);
   useEffect(() => {
     async function getData() {
       return readItem().then((data) => {
@@ -14,6 +15,7 @@ const FavoritDogs = () => {
           Object.entries(data).map((item) => {
             console.log(item);
           });
+          setLoader(true);
         } else {
           return null;
         }
@@ -28,6 +30,7 @@ const FavoritDogs = () => {
     <section className="favorit-dogs">
       <div className="favorit-dogs__container">
         <h1 className="favorit-dogs__title">Favorit dogs</h1>
+        {loader ? setFavoritDogsData : <div className="loader"></div>}
         <ol className="favorit-dogs__list">
           {Object.values(favoritDogsData).map((favorit) => (
             <li key={favorit.id} className="favorit-dogs__list-item">
