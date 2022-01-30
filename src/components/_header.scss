@@ -6,6 +6,7 @@
   align-items: center;
   border-bottom: 1px solid black;
   position: fixed;
+  //
   backdrop-filter: blur(15px);
   top: 0;
   left: 0;
@@ -30,6 +31,7 @@
     font-weight: 700;
     &:hover {
       text-decoration: underline;
+      color: white;
     }
   }
 }

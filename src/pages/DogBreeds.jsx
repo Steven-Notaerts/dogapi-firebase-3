@@ -32,7 +32,7 @@ const DogBreeds = () => {
     <div className="dogbreeds">
       <div className="dogbreeds__container">
         <h1 className="dogbreeds__title">Dog breeds</h1>
-        <div className="loader"></div>
+        {/* <div className="loader"></div> */}
         <ul className="dogbreeds__list">
           {dogApiData.map((breed) => (
             <li key={breed.id} className="dogbreeds__list-item">

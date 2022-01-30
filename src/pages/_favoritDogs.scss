@@ -24,6 +24,9 @@
   }
 
   &__list-item {
+    text-decoration: wavy;
+    display: flex;
+    justify-content: space-between;
   }
   &__remove-btn {
     background: none;

@@ -29,7 +29,7 @@
     height: auto;
     flex-grow: 1;
     margin: 1rem;
-    box-shadow: 5px 5px 15px -4px #000000;
+    //  box-shadow: 5px 5px 15px -4px #000000;
   }
   &__link {
     display: flex;
@@ -37,7 +37,10 @@
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    color: black;
+    color: #f1dca7;
+    &:hover {
+      color: white;
+    }
   }
   &__img {
     height: 150px;

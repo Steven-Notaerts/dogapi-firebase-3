@@ -12,7 +12,7 @@ function App() {
     <div className="App">
       <Header />
       <Router>
-        <Home path="/" />
+        <Home path="/Home" />
         <DogBreeds path="/DogBreeds" />
         <DogBreedsDetail path="/DogBreeds/:id" />
         <FavoritDogs path="/FavoritDogs" />
