@@ -34,7 +34,7 @@ const FavoritDogs = () => {
         <ol className="favorit-dogs__list">
           {Object.values(favoritDogsData).map((favorit) => (
             <li key={favorit.id} className="favorit-dogs__list-item">
-              {favorit.name}
+              <span>{favorit.name}</span>
               <button
                 className="favorit-dogs__remove-btn"
                 onClick={() => {

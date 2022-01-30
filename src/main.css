@@ -187,7 +187,6 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 1px solid red;
 }
 
 .favorit-dogs__title {
@@ -196,21 +195,26 @@
   width: 100%;
 }
 
+.favorit-dogs__list {
+  width: 20rem;
+}
+
 .favorit-dogs__list-item {
-  -webkit-text-decoration: wavy;
-          text-decoration: wavy;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  list-style: circle;
+  margin: 1rem;
 }
 
 .favorit-dogs__remove-btn {
   background: none;
   border: none;
   margin-left: 1rem;
+  letter-spacing: 1px;
 }
 
 .favorit-dogs__remove-btn:hover {
