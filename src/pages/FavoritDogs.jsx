@@ -39,7 +39,7 @@ const FavoritDogs = () => {
                 className="favorit-dogs__remove-btn"
                 onClick={() => {
                   removeItem(favorit.id);
-                  alert(favorit.name + "has been deleted from favorits list.");
+                  alert(favorit.name + " has been deleted from favorits list.");
                 }}
               >
                 Delete as favorit
