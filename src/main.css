@@ -11,7 +11,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-bottom: 1px solid black;
+  border-bottom: 3px solid #536b78;
   position: fixed;
   -webkit-backdrop-filter: blur(15px);
           backdrop-filter: blur(15px);
@@ -47,7 +47,7 @@
 .header-nav__list-item {
   margin: 1rem 2rem;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   text-decoration: none;
   color: black;
   font-weight: 700;
@@ -135,7 +135,9 @@
       -ms-flex-pack: center;
           justify-content: center;
   text-decoration: none;
-  color: #f1dca7;
+  color: black;
+  font-weight: 700;
+  letter-spacing: 1px;
 }
 
 .dogbreeds__link:hover {
@@ -345,11 +347,11 @@
 }
 
 .dog-info__submit:hover {
-  background-color: lightblue;
+  background-color: #accbe1;
 }
 
 .loader {
-  color: #ffcb69;
+  color: #536b78;
   font-size: 90px;
   text-indent: -9999em;
   overflow: hidden;
@@ -450,6 +452,6 @@
 
 body {
   font-family: "Kameron", serif;
-  background-color: #9b9b7a;
+  background-color: #7c98b3;
 }
 /*# sourceMappingURL=main.css.map */
