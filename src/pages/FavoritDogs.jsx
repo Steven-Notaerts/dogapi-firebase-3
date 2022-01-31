@@ -5,27 +5,30 @@ import { useState, useEffect } from "react";
 const FavoritDogs = () => {
   const [favoritDogsData, setFavoritDogsData] = useState([]);
   const [loader, setLoader] = useState(false);
-  useEffect(() => {
-    async function getData() {
-      return readItem().then((data) => {
-        //object.values zal alleen de waarden meegeven
-        //object.keys zal alleen de key's meegeven
-        //object.entries zal alles meegeven, neemt key and value en steekt hem in een array
-        if (Object.entries(data)) {
-          Object.entries(data).map((item) => {
-            console.log(item);
-          });
-          setLoader(true);
-        } else {
-          return null;
-        }
 
-        setFavoritDogsData(data);
-      });
-    }
+  async function getData() {
+    return readItem().then((data) => {
+      //object.values zal alleen de waarden meegeven
+      //object.keys zal alleen de key's meegeven
+      //object.entries zal alles meegeven, neemt key and value en steekt hem in een array
+      if (Object.entries(data)) {
+        Object.entries(data).map((item) => {
+          console.log(item);
+        });
+        setLoader(true);
+      } else {
+        return null;
+      }
+
+      setFavoritDogsData(data);
+    });
+  }
+
+  useEffect(() => {
     getData();
   }, []);
-
+  // herlaad niet bij een item te verwijderen
+  // proberen =>  JSON.stringify() +favoritDogData
   return (
     <section className="favorit-dogs">
       <div className="favorit-dogs__container">

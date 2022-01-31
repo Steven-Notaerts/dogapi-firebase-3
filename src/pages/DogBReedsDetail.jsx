@@ -1,6 +1,7 @@
 ﻿/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect, useState } from "react";
 import { writeItem } from "../utils/FireBase";
+
 const DogBreedsDetail = ({ id }) => {
   //const imageUrl = process.env.REACT_APP_DOG_IMG_URL;
   const [dogDetail, setDogDetail] = useState([]);
@@ -15,7 +16,6 @@ const DogBreedsDetail = ({ id }) => {
         console.log(detailData);
         console.log(typeof detailData.height.metric);
         console.log(typeof detailData.name);
-        //console.log(`${imageUrl}${dogDetail.reference_image_id}.jpg`);
         // console.log(dogDetail.height.metric);
         setDogDetail(detailData);
         setLoader(true);

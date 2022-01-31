@@ -1,10 +1,12 @@
 ﻿/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect, useState } from "react";
 import { Link } from "@reach/router";
+
 const DogBreeds = () => {
   const [dogApiData, setDogApiData] = useState([]);
   const [dogDetail, setDogDetail] = useState([{ id: null }]);
   const [loader, setLoader] = useState(false);
+
   useEffect(() => {
     async function dogApiData() {
       try {

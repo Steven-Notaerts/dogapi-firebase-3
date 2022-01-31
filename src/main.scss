@@ -1,9 +1,9 @@
-﻿@import "../../dogapi-firebase-3/src/components/header";
-@import "../../dogapi-firebase-3/src/pages/dogBreeds";
-@import "../../dogapi-firebase-3/src/pages/favoritDogs";
-@import "../../dogapi-firebase-3/src/pages/home";
-@import "../../dogapi-firebase-3/src/pages/dogBreedDetail";
-@import "../../dogapi-firebase-3/src/components/loader";
+﻿@use "../../dogapi-firebase-3/src/components/header";
+@use "../../dogapi-firebase-3/src/pages/dogBreeds";
+@use "../../dogapi-firebase-3/src/pages/favoritDogs";
+@use "../../dogapi-firebase-3/src/pages/home";
+@use "../../dogapi-firebase-3/src/pages/dogBreedDetail";
+@use "../../dogapi-firebase-3/src/components/loader";
 @import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
 
 body {
